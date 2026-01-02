@@ -1,0 +1,273 @@
+.yoga-classes {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  background: #dfebeb;
+}
+
+.classes-container {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .yoga-classes {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    background-color: #f2fafa;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .yoga-classes {
+    padding-top: 112px;
+    padding-bottom: 112px;
+
+    background-color: #f2fafa;
+  }
+}
+
+.explore-p {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+
+  line-height: 1.5;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .explore-p {
+    margin-bottom: 16px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .explore-p {
+    margin-bottom: 16px;
+  }
+}
+
+.discover-title {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 40px;
+  
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .discover-title {
+  margin-bottom: 24px;
+  }
+}
+
+.discover-inf {
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 48px;
+
+  width: 100%;
+  max-width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .discover-inf {
+    font-size: 18px;
+    max-width: 704px;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .discover-inf {
+    margin-bottom: 40px;
+    max-width: 768px;
+  }
+}
+
+.discover-list {
+  display: flex;
+  justify-content: flex-start;
+  gap: 48px;
+  flex-direction: column;
+}
+
+.img-wrapper {
+  width: 100%;
+}
+
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  transition: transform 0.3s ease;
+}
+
+.img-wrapper img:hover {
+  transform: scale(1.05);
+}
+
+.version-desktop {
+  display: none;
+}
+.version-tablet {
+  display: block;
+}
+
+@media screen and (min-width: 768px) {
+  .discover-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .discover-list-item {
+    width: calc((100% - 24px) / 2);
+  }
+
+  .discover-list-item:nth-child(3) {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1336px) {
+  .discover-list {
+    display: flex;
+    flex-wrap: nowrap;
+
+    align-items: flex-start;
+  }
+
+  .discover-list-item {
+    width: calc((100% - 48px) / 3);
+  }
+
+  .discover-list-item:nth-child(3) {
+    width: calc((100% - 48px) / 3);
+  } 
+  
+  .version-desktop {
+    display: block;
+  }
+  .version-tablet {
+    display: none;
+  }
+}
+
+.discover-item-title {
+  font-family: "Cabin", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: #0d0b0a;
+
+  margin-top: 24px;
+}
+
+@media screen and (min-width: 768px) {
+  .discover-item-title {
+    margin-bottom: 0;
+    margin-top: 16px;
+  }
+}
+
+@media screen and (min-width: 1336px) {
+  .discover-item-title {
+    font-size: 36px;
+    margin-bottom: 24px;
+    margin-top: 32px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hidden-part-foundation {
+    display: none;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .hidden-part-foundation {
+    display: none;
+  }
+}
+.discover-text {
+  font-family: 'Sarabun', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+
+  line-height: 1.6;
+  text-align: center;
+  color: #0d0b0a;
+}
+
+.join-btn {
+  border: 1px solid #c2d9fc;
+  border-radius: 100px;
+  width: 343px;
+  height: 46px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #0d0b0a;
+  background-color: #c2d9fc;
+
+  text-align: center;
+  display: block;
+  padding: 10px 24px;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 48px;
+}
+
+@media (max-width: 374px) {
+  .join-btn {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .join-btn {
+    width: 110px;
+    height: 46px;
+    margin-top: 61px;
+  }
+  .join-btn::after {
+    content: ' now';
+    white-space: nowrap;
+  }
+}
+@media screen and (min-width: 1336px) {
+  .join-btn {
+    width: 110px;
+    height: 46px;
+    margin-top: 40px;
+  }
+
+  .join-btn::after {
+    content: ' now';
+    white-space: nowrap;
+  }
+}
