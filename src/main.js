@@ -1,5 +1,3 @@
-import "./js/menu-burger.js"
-import "./js/modal10.js"
-import "./js/modal65.js"
-import "./js/modal80.js"
-import "./js/modal80tab.js"
+import './js/menu.js';
+import './js/modal.js';
+import './js/forms.js';
