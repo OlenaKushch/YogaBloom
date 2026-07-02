@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build --base=/YogaBloom/",
+    "build:vercel": "vite build --base=/",
     "preview": "vite preview",
     "generate:placeholders": "node scripts/generate-placeholders.mjs",
     "format": "prettier --write \"src/**/*.{html,css,js}\"",
