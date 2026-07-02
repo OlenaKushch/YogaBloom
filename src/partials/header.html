@@ -1,11 +1,14 @@
 <header id="header" class="page-header">
-  <nav class="nav">
+  <nav class="nav" aria-label="Main navigation">
     <ul class="nav-list">
       <li class="nav-item">
         <a class="item-list" href="#yoga-classes">Yoga Classes</a>
       </li>
       <li class="nav-item">
         <a class="item-list" href="#team">Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="item-list" href="#about-us">About</a>
       </li>
       <li class="nav-item">
         <a class="item-list" href="#testimonials">Testimonials</a>
@@ -17,13 +20,20 @@
         <a class="item-list" href="#footer">Contacts</a>
       </li>
     </ul>
-    <button class="burger-btn" type="button" data-menu-open>
-      <svg width="24" height="24" class="burger-icon">
+    <button
+      class="burger-btn"
+      type="button"
+      data-menu-open
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="24" height="24" class="burger-icon" aria-hidden="true">
         <use href="./img/sprite.svg#icon-burger-menu"></use>
       </svg>
     </button>
-    <a class="nav-logo" href="#header">
-      <svg class="nav-logo-icon" width="84" height="36">
+    <a class="nav-logo" href="#header" aria-label="Yoga Bloom — home">
+      <svg class="nav-logo-icon" width="84" height="36" aria-hidden="true">
         <use href="./img/sprite.svg#icon-logo-yoga-bloom"></use>
       </svg>
     </a>
@@ -33,32 +43,49 @@
   </nav>
 </header>
 
-<div class="mobile-menu" data-menu>
+<div
+  class="mobile-menu"
+  id="mobile-menu"
+  data-menu
+  aria-hidden="true"
+>
   <div class="container">
     <div class="mobile-menu-container">
-      <button class="mobile-menu-close" data-menu-close>
-        <svg class="mobile-menu-close-icon" width="24" height="24">
+      <button
+        class="mobile-menu-close"
+        type="button"
+        data-menu-close
+        aria-label="Close menu"
+      >
+        <svg class="mobile-menu-close-icon" width="24" height="24" aria-hidden="true">
           <use href="./img/sprite.svg#icon-x"></use>
         </svg>
       </button>
-      <a class="nav-logo-mob" href="./index.html">
-        <svg class="nav-logo-icon" width="84" height="36">
+      <a class="nav-logo-mob" href="#header" aria-label="Yoga Bloom — home">
+        <svg class="nav-logo-icon" width="84" height="36" aria-hidden="true">
           <use href="./img/sprite.svg#icon-logo-yoga-bloom"></use>
         </svg>
       </a>
-      <button class="btn-push-mob button-general" type="button">
+      <a
+        class="btn-push-mob button-general"
+        href="#pricing-plan"
+        data-menu-join
+      >
         Join<span class="btn-join-mob"> Now</span>
-      </button>
+      </a>
     </div>
 
     <div class="nav-mobile-container">
-      <nav class="mobile-menu-nav">
+      <nav class="mobile-menu-nav" aria-label="Mobile navigation">
         <ul class="nav-list-mob">
           <li class="nav-item">
             <a class="item-list" href="#yoga-classes">Yoga Classes</a>
           </li>
           <li class="nav-item">
             <a class="item-list" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="item-list" href="#about-us">About</a>
           </li>
           <li class="nav-item">
             <a class="item-list" href="#testimonials">Testimonials</a>
@@ -71,9 +98,13 @@
           </li>
         </ul>
       </nav>
-      <a href="#pricing-plan" class="btn-menu-mobile button-general"
-        >Join<span class="btn-join"> Now</span></a
+      <a
+        href="#pricing-plan"
+        class="btn-menu-mobile button-general"
+        data-menu-join
       >
+        Join<span class="btn-join"> Now</span>
+      </a>
     </div>
   </div>
 </div>

@@ -107,7 +107,7 @@
   color: var(--color-scheme-2-text);
 }
 
-.prising-plan-first {
+.pricing-plan-btn {
   padding-top: 16px;
   padding-bottom: 16px;
   border: none;
@@ -120,8 +120,12 @@
   color: var(--color-neutral-darkest);
 }
 
-.pricing-plan-list-item:last-child {
+.pricing-plan-btn--inline {
   display: none;
+}
+
+.pricing-plan-list-item--featured .pricing-plan-btn--default {
+  display: block;
 }
 
 /* tablet styles */
@@ -133,8 +137,7 @@
 
   .pricing-plan-list {
     margin-top: 24px;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: space-around;
     gap: 24px;
   }
@@ -144,35 +147,38 @@
     width: 340px;
   }
 
-  .pricing-plan-list-item:last-child {
-    display: flex;
+  .pricing-plan-list-item--featured {
     width: 100%;
     padding-top: 86px;
     padding-bottom: 86px;
   }
 
-  .pricing-plan-list-context {
-    gap: 32px;
+  .pricing-plan-list-item--featured .pricing-plan-list-context {
+    flex-flow: row wrap;
     justify-content: center;
+    gap: 32px;
   }
 
-  .pricing-plan-list li:nth-child(3) {
-    display: none;
+  .pricing-plan-list-item--featured .pricing-plan-list-head {
+    width: calc(50% - 16px);
+    align-items: flex-start;
+    text-align: left;
   }
 
-  .pricing-plan-list-context:last-child {
-    flex-direction: row;
-    flex-wrap: wrap;
+  .pricing-plan-list-item--featured .pricing-plan-package-list {
+    width: calc(50% - 16px);
   }
 
-  .pricing-plan-list-context:last-child .pricing-plan-list-head {
-    width: calc(((704px) / 2) - 32px);
-    align-items: normal;
-    text-align: center;
-  }
-
-  .pricing-plan-list-context:last-child .prising-plan-first {
+  .pricing-plan-list-item--featured .pricing-plan-btn--inline {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     width: auto;
+    margin-top: 16px;
+  }
+
+  .pricing-plan-list-item--featured .pricing-plan-btn--default {
+    display: none;
   }
 
   .pricing-plan-text {
@@ -208,24 +214,43 @@
 
   .pricing-plan-list-item {
     justify-content: space-between;
-  }
-
-  .pricing-plan-list-item,
-  .pricing-plan-list-item:last-child {
     width: 421px;
     padding: 32px;
   }
 
-  .pricing-plan-list li:nth-child(3) {
-    display: flex;
+  .pricing-plan-list-item--featured {
+    width: 421px;
+    padding: 32px;
   }
 
-  .pricing-plan-list li:last-child {
+  .pricing-plan-list-item--featured .pricing-plan-list-context {
+    flex-direction: column;
+  }
+
+  .pricing-plan-list-item--featured .pricing-plan-list-head {
+    width: auto;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pricing-plan-list-item--featured .pricing-plan-package-list {
+    width: auto;
+  }
+
+  .pricing-plan-list-item--featured .pricing-plan-btn--inline {
     display: none;
+  }
+
+  .pricing-plan-list-item--featured .pricing-plan-btn--default {
+    display: block;
   }
 }
 
-/*MODAL*/
+/* MODAL */
+
+.modal-overlay[hidden] {
+  display: none;
+}
 
 .modal-overlay {
   position: fixed;
@@ -248,24 +273,12 @@
   visibility: visible;
 }
 
-.modal-overlay-65.is-open {
-  pointer-events: auto;
-  opacity: 1;
-  visibility: visible;
-}
-
-.modal-overlay-80.is-open {
-  pointer-events: auto;
-  opacity: 1;
-  visibility: visible;
-}
-
 .modal {
   width: 100%;
   height: 720px;
   background-color: #DFEBEB;
   position: absolute;
-  padding: 64px 16px 112px 16px;
+  padding: 64px 16px 112px;
 }
 
 .modal-close-btn {

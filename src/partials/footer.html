@@ -1,8 +1,8 @@
 <footer class="footer" id="footer">
   <div class="container footer-container">
     <div class="footer-form-wrapper">
-      <a class="footer-logo" href="#header">
-        <svg class="footer-logo-icon" width="84" height="36">
+      <a class="footer-logo" href="#header" aria-label="Yoga Bloom — home">
+        <svg class="footer-logo-icon" width="84" height="36" aria-hidden="true">
           <use href="./img/sprite.svg#icon-logo-yoga-bloom"></use>
         </svg>
       </a>
@@ -10,14 +10,14 @@
         Subscribe to our newsletter for the latest updates on our yoga courses
         and events.
       </p>
-      <form class="footer-form" action="submit">
+      <form class="footer-form" action="#" method="post">
         <input
           class="footer-form-input"
           type="email"
           name="form-email"
           id="footer-email"
           placeholder="Your email here"
-          pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,})\.([A-Za-z]{2,8})"
+          autocomplete="email"
           required
         />
         <button class="footer-button button-general" type="submit">Join</button>
@@ -40,6 +40,9 @@
             <a class="quick-links link-gen" href="#team">Team</a>
           </li>
           <li class="quick-links-list-item">
+            <a class="quick-links link-gen" href="#about-us">About</a>
+          </li>
+          <li class="quick-links-list-item">
             <a class="quick-links link-gen" href="#pricing-plan">Pricing</a>
           </li>
           <li class="quick-links-list-item">
@@ -55,8 +58,9 @@
               class="footer-socials-link link-for-icon"
               href="https://www.facebook.com/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <svg class="footer-socials-icon icon-sec" width="24" height="24">
+              <svg class="footer-socials-icon icon-sec" width="24" height="24" aria-hidden="true">
                 <use href="./img/sprite.svg#icon-facebook"></use>
               </svg>
               <p class="text-soc">Facebook</p>
@@ -67,8 +71,9 @@
               class="footer-socials-link link-for-icon"
               href="https://www.instagram.com/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <svg class="footer-socials-icon icon-sec" width="24" height="24">
+              <svg class="footer-socials-icon icon-sec" width="24" height="24" aria-hidden="true">
                 <use href="./img/sprite.svg#icon-instagram"></use>
               </svg>
               <p class="text-soc">Instagram</p>
@@ -79,8 +84,9 @@
               class="footer-socials-link link-for-icon"
               href="https://www.linkedin.com/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <svg class="footer-socials-icon icon-sec" width="24" height="24">
+              <svg class="footer-socials-icon icon-sec" width="24" height="24" aria-hidden="true">
                 <use href="./img/sprite.svg#icon-linkedin"></use>
               </svg>
               <p class="text-soc">LinkedIn</p>
@@ -91,8 +97,9 @@
               class="footer-socials-link link-for-icon"
               href="https://www.youtube.com/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <svg class="footer-socials-icon icon-sec" width="24" height="24">
+              <svg class="footer-socials-icon icon-sec" width="24" height="24" aria-hidden="true">
                 <use href="./img/sprite.svg#icon-youtube"></use>
               </svg>
               <p class="text-soc">YouTube</p>

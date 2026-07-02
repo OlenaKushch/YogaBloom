@@ -47,9 +47,6 @@
 .gallery_images {
   border-radius: 16px;
   max-width: 100%;
-}
-
-.gallery_images {
   transition: transform 0.3s ease;
   cursor: pointer;
 }

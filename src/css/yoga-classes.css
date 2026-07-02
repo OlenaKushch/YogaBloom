@@ -16,6 +16,7 @@
     background-color: #f2fafa;
   }
 }
+
 @media screen and (min-width: 1336px) {
   .yoga-classes {
     padding-top: 112px;
@@ -88,6 +89,7 @@
     max-width: 704px;
   }
 }
+
 @media screen and (min-width: 1336px) {
   .discover-inf {
     margin-bottom: 40px;
@@ -111,14 +113,6 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-}
-
-.img-wrapper img {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-
   transition: transform 0.3s ease;
 }
 
@@ -126,17 +120,9 @@
   transform: scale(1.05);
 }
 
-.version-desktop {
-  display: none;
-}
-.version-tablet {
-  display: block;
-}
-
 @media screen and (min-width: 768px) {
   .discover-list {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 24px;
   }
@@ -164,13 +150,6 @@
 
   .discover-list-item:nth-child(3) {
     width: calc((100% - 48px) / 3);
-  } 
-  
-  .version-desktop {
-    display: block;
-  }
-  .version-tablet {
-    display: none;
   }
 }
 
@@ -207,11 +186,13 @@
     display: none;
   }
 }
+
 @media screen and (min-width: 1336px) {
   .hidden-part-foundation {
     display: none;
   }
 }
+
 .discover-text {
   font-family: 'Sarabun', sans-serif;
   font-weight: 400;
@@ -254,11 +235,13 @@
     height: 46px;
     margin-top: 61px;
   }
+
   .join-btn::after {
     content: ' now';
     white-space: nowrap;
   }
 }
+
 @media screen and (min-width: 1336px) {
   .join-btn {
     width: 110px;
