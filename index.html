@@ -2,37 +2,42 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/x-icon" href="/snickersy-project/favicon.ico" />
+    <link rel="icon" type="image/x-icon" href="/YogaBloom/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Yoga Bloom</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    <meta
+      name="description"
+      content="Yoga Bloom — transform your life with expertly designed yoga programs. Join our community for wellness and personal growth."
     />
+    <meta property="og:title" content="Yoga Bloom" />
+    <meta
+      property="og:description"
+      content="Discover harmony of mind and body through our yoga classes and programs."
+    />
+    <title>Yoga Bloom</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
       rel="stylesheet"
     />
-    <style>
-      html {
-        scroll-behavior: smooth;
-      }
-    </style>
-    <script type="module" crossorigin src="/snickersy-project/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/snickersy-project/assets/index-CbUroLvA.css">
+    <script type="module" crossorigin src="/YogaBloom/index.js"></script>
+    <link rel="stylesheet" crossorigin href="/YogaBloom/assets/index-CTq5sB7y.css">
   </head>
 
   <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
     <header id="header" class="page-header">
-  <nav class="nav">
+  <nav class="nav" aria-label="Main navigation">
     <ul class="nav-list">
       <li class="nav-item">
         <a class="item-list" href="#yoga-classes">Yoga Classes</a>
       </li>
       <li class="nav-item">
         <a class="item-list" href="#team">Team</a>
+      </li>
+      <li class="nav-item">
+        <a class="item-list" href="#about-us">About</a>
       </li>
       <li class="nav-item">
         <a class="item-list" href="#testimonials">Testimonials</a>
@@ -44,14 +49,21 @@
         <a class="item-list" href="#footer">Contacts</a>
       </li>
     </ul>
-    <button class="burger-btn" type="button" data-menu-open>
-      <svg width="24" height="24" class="burger-icon">
-        <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-burger-menu"></use>
+    <button
+      class="burger-btn"
+      type="button"
+      data-menu-open
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg width="24" height="24" class="burger-icon" aria-hidden="true">
+        <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-burger-menu"></use>
       </svg>
     </button>
-    <a class="nav-logo" href="#header">
-      <svg class="nav-logo-icon" width="84" height="36">
-        <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-logo-yoga-bloom"></use>
+    <a class="nav-logo" href="#header" aria-label="Yoga Bloom — home">
+      <svg class="nav-logo-icon" width="84" height="36" aria-hidden="true">
+        <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-logo-yoga-bloom"></use>
       </svg>
     </a>
     <div class="btn-header">
@@ -60,32 +72,49 @@
   </nav>
 </header>
 
-<div class="mobile-menu" data-menu>
+<div
+  class="mobile-menu"
+  id="mobile-menu"
+  data-menu
+  aria-hidden="true"
+>
   <div class="container">
     <div class="mobile-menu-container">
-      <button class="mobile-menu-close" data-menu-close>
-        <svg class="mobile-menu-close-icon" width="24" height="24">
-          <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-x"></use>
+      <button
+        class="mobile-menu-close"
+        type="button"
+        data-menu-close
+        aria-label="Close menu"
+      >
+        <svg class="mobile-menu-close-icon" width="24" height="24" aria-hidden="true">
+          <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-x"></use>
         </svg>
       </button>
-      <a class="nav-logo-mob" href="./index.html">
-        <svg class="nav-logo-icon" width="84" height="36">
-          <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-logo-yoga-bloom"></use>
+      <a class="nav-logo-mob" href="#header" aria-label="Yoga Bloom — home">
+        <svg class="nav-logo-icon" width="84" height="36" aria-hidden="true">
+          <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-logo-yoga-bloom"></use>
         </svg>
       </a>
-      <button class="btn-push-mob button-general" type="button">
+      <a
+        class="btn-push-mob button-general"
+        href="#pricing-plan"
+        data-menu-join
+      >
         Join<span class="btn-join-mob"> Now</span>
-      </button>
+      </a>
     </div>
 
     <div class="nav-mobile-container">
-      <nav class="mobile-menu-nav">
+      <nav class="mobile-menu-nav" aria-label="Mobile navigation">
         <ul class="nav-list-mob">
           <li class="nav-item">
             <a class="item-list" href="#yoga-classes">Yoga Classes</a>
           </li>
           <li class="nav-item">
             <a class="item-list" href="#team">Team</a>
+          </li>
+          <li class="nav-item">
+            <a class="item-list" href="#about-us">About</a>
           </li>
           <li class="nav-item">
             <a class="item-list" href="#testimonials">Testimonials</a>
@@ -98,21 +127,24 @@
           </li>
         </ul>
       </nav>
-      <a href="#pricing-plan" class="btn-menu-mobile button-general"
-        >Join<span class="btn-join"> Now</span></a
+      <a
+        href="#pricing-plan"
+        class="btn-menu-mobile button-general"
+        data-menu-join
       >
+        Join<span class="btn-join"> Now</span>
+      </a>
     </div>
   </div>
 </div>
 
 
-    <main>
-      <!-- Loads the specified .html file -->
+    <main id="main">
       <section class="hero">
   <div class="hero-img"></div>
   <div class="container hero-container">
     <div class="hero-info">
-      <h1 class="hero-header">Transform Your Life with Our Yoga Clases</h1>
+      <h1 class="hero-header">Transform Your Life with Our Yoga Classes</h1>
       <div class="hero-wrapper">
         <p class="hero-descr">
           Discover the harmony of mind and body through our expertly designed
@@ -151,19 +183,19 @@
           <picture>
             <source
               media="(min-width: 1336px)"
-              srcset="/snickersy-project/assets/beginner-desk-B6Y2CI6x.png 1x, /snickersy-project/assets/beginner-desk2x-0Yh01f_2.png 2x"
+              srcset="/YogaBloom/assets/beginner-desk-B6Y2CI6x.png 1x, /YogaBloom/assets/beginner-desk2x-0Yh01f_2.png 2x"
             />
             <source
               media="(min-width: 768px)"
-              srcset="/snickersy-project/assets/beginner-tab-D9WqNFxc.png 1x, /snickersy-project/assets/beginner-tab2x-C63U3Ga6.png 2x"
+              srcset="/YogaBloom/assets/beginner-tab-D9WqNFxc.png 1x, /YogaBloom/assets/beginner-tab2x-C63U3Ga6.png 2x"
             />
             <source
               media="(max-width: 767px)"
-              srcset="/snickersy-project/assets/beginner-DpuHKzRJ.png 1x, /snickersy-project/assets/beginner2x-BXjQoBDI.png 2x"
+              srcset="/YogaBloom/assets/beginner-DpuHKzRJ.png 1x, /YogaBloom/assets/beginner2x-BXjQoBDI.png 2x"
             />
             <img
-              src="/snickersy-project/assets/beginner-DpuHKzRJ.png"
-              alt="beginner-yoga"
+              src="/YogaBloom/assets/beginner-DpuHKzRJ.png"
+              alt="Beginner yoga class"
               width="343"
               height="198"
             />
@@ -182,19 +214,19 @@
           <picture>
             <source
               media="(min-width: 1336px)"
-              srcset="/snickersy-project/assets/vinyasa-desk-BIMRlNLN.png 1x, /snickersy-project/assets/vinyasa-desk2x-FdgEdq4Q.png 2x"
+              srcset="/YogaBloom/assets/vinyasa-desk-BIMRlNLN.png 1x, /YogaBloom/assets/vinyasa-desk2x-FdgEdq4Q.png 2x"
             />
             <source
               media="(min-width: 768px)"
-              srcset="/snickersy-project/assets/vinyasa-tab-C_UOGWAL.png 1x, /snickersy-project/assets/vinyasa-tab2x-dvUM54Vq.png 2x"
+              srcset="/YogaBloom/assets/vinyasa-tab-C_UOGWAL.png 1x, /YogaBloom/assets/vinyasa-tab2x-dvUM54Vq.png 2x"
             />
             <source
               media="(max-width: 767px)"
-              srcset="/snickersy-project/assets/vinyasa-D0uCdXzQ.png 1x, /snickersy-project/assets/vinyasa2x-DG7IwXAr.png 2x"
+              srcset="/YogaBloom/assets/vinyasa-D0uCdXzQ.png 1x, /YogaBloom/assets/vinyasa2x-DG7IwXAr.png 2x"
             />
             <img
-              src="/snickersy-project/assets/vinyasa-D0uCdXzQ.png"
-              alt="vinyasa-yoga"
+              src="/YogaBloom/assets/vinyasa-D0uCdXzQ.png"
+              alt="Vinyasa flow yoga class"
               width="343"
               height="198"
             />
@@ -207,46 +239,26 @@
           Experience a dynamic sequence that connects breath and movement.
         </p>
       </li>
-      <!-- (min-width: 768px) -->
-      <li class="discover-list-item version-tablet">
-        <div class="img-wrapper">
-          <picture>
-            <source
-              media="(min-width: 768px)"
-              srcset="/snickersy-project/assets/restorative-tab-DUCS-Tmq.png 1x, /snickersy-project/assets/restorative-tab2x-swItGRGi.png 2x"
-            />
-            <source
-              media="(max-width: 767px)"
-              srcset="/snickersy-project/assets/restorative-B9vI4uJF.png 1x, /snickersy-project/assets/restorative2x-B_5dm7hR.png 2x"
-            />
-            <img
-              src="/snickersy-project/assets/restorative-B9vI4uJF.png"
-              alt="restorative-yoga"
-              width="343"
-              height="198"
-            />
-          </picture>
-        </div>
-        <h3 class="discover-item-title">
-          Restorative Yoga: Deep Relaxation and Healing
-        </h3>
-        <p class="discover-text">
-          Unwind and rejuvenate with gentle poses and mindfulness.
-        </p>
-      </li>
-      <!-- (min-width: 1336px) -->
-      <li class="discover-list-item version-desktop">
+      <li class="discover-list-item">
         <div class="img-wrapper">
           <picture>
             <source
               media="(min-width: 1336px)"
-              srcset="/snickersy-project/assets/restorative-desk-U2O8AVCr.png 1x, /snickersy-project/assets/restorative-desk2x-qDQ2Gsjd.png 2x"
+              srcset="/YogaBloom/assets/restorative-desk-U2O8AVCr.png 1x, /YogaBloom/assets/restorative-desk2x-qDQ2Gsjd.png 2x"
+            />
+            <source
+              media="(min-width: 768px)"
+              srcset="/YogaBloom/assets/restorative-tab-DUCS-Tmq.png 1x, /YogaBloom/assets/restorative-tab2x-swItGRGi.png 2x"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="/YogaBloom/assets/restorative-B9vI4uJF.png 1x, /YogaBloom/assets/restorative2x-B_5dm7hR.png 2x"
             />
             <img
-              src="/snickersy-project/assets/restorative-desk-U2O8AVCr.png"
-              alt="restorative-yoga"
-              width="421"
-              height="240"
+              src="/YogaBloom/assets/restorative-B9vI4uJF.png"
+              alt="Restorative yoga class"
+              width="343"
+              height="198"
             />
           </picture>
         </div>
@@ -276,18 +288,18 @@
         <picture class="picture-team">
           <source
             media="(min-width: 1336px)"
-            srcset="/snickersy-project/assets/t-1-desk-1x-tO6CbkX6.png 1x, /snickersy-project/assets/t-1-desk-2x-FCI45AuN.png 2x"
+            srcset="/YogaBloom/assets/t-1-desk-1x-tO6CbkX6.png 1x, /YogaBloom/assets/t-1-desk-2x-FCI45AuN.png 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/snickersy-project/assets/t-1-tab-1x-DUhRJzGG.png 1x, /snickersy-project/assets/t-1-tab-2x-6xBhkFsH.png 2x"
+            srcset="/YogaBloom/assets/t-1-tab-1x-DUhRJzGG.png 1x, /YogaBloom/assets/t-1-tab-2x-6xBhkFsH.png 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/snickersy-project/assets/t-1-mob-1x-UzLZXqIy.png 1x, /snickersy-project/assets/t-1-mob-2x-D_hQSwsz.png 2x"
+            srcset="/YogaBloom/assets/t-1-mob-1x-UzLZXqIy.png 1x, /YogaBloom/assets/t-1-mob-2x-D_hQSwsz.png 2x"
           />
           <img
-            src="/snickersy-project/assets/t-1-mob-1x-UzLZXqIy.png"
+            src="/YogaBloom/assets/t-1-mob-1x-UzLZXqIy.png"
             alt="Liam Johnson"
             width="343"
             height="221"
@@ -306,10 +318,11 @@
                 <a
                   class="link-for-icon"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.linkedin.com/school/goit-start-your-career-in-it/"
                 >
                   <svg class="team-social-icon icon-gen" width="24" height="24">
-                    <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
+                    <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -317,10 +330,11 @@
                 <a
                   class="link-for-icon"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.instagram.com/goitclub/"
                 >
                   <svg class="team-social-icon icon-gen" width="24" height="24">
-                    <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
+                    <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -332,18 +346,18 @@
         <picture class="picture-team">
           <source
             media="(min-width: 1336px)"
-            srcset="/snickersy-project/assets/t-2-desk-1x-BEyQVHrz.png 1x, /snickersy-project/assets/t-2-desk-2x-DpDQdGsX.png 2x"
+            srcset="/YogaBloom/assets/t-2-desk-1x-BEyQVHrz.png 1x, /YogaBloom/assets/t-2-desk-2x-DpDQdGsX.png 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/snickersy-project/assets/t-2-tab-1x-CIOhrfyG.png 1x, /snickersy-project/assets/t-2-tab-2x-DeKsJPku.png 2x"
+            srcset="/YogaBloom/assets/t-2-tab-1x-CIOhrfyG.png 1x, /YogaBloom/assets/t-2-tab-2x-DeKsJPku.png 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/snickersy-project/assets/t-2-mob-1x-BKzIiYYu.png 1x, /snickersy-project/assets/t-2-mob-2x-0Mh4Jeqi.png 2x"
+            srcset="/YogaBloom/assets/t-2-mob-1x-BKzIiYYu.png 1x, /YogaBloom/assets/t-2-mob-2x-0Mh4Jeqi.png 2x"
           />
           <img
-            src="/snickersy-project/assets/t-2-mob-1x-BKzIiYYu.png"
+            src="/YogaBloom/assets/t-2-mob-1x-BKzIiYYu.png"
             alt="Emma Stone"
             width="343"
             height="221"
@@ -359,10 +373,11 @@
             <a
               class="link-for-icon"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/school/goit-start-your-career-in-it/"
             >
               <svg class="team-social-icon icon-gen" width="24" height="24">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
               </svg>
             </a>
           </div>
@@ -372,18 +387,18 @@
         <picture class="picture-team">
           <source
             media="(min-width: 1336px)"
-            srcset="/snickersy-project/assets/t-3-desk-1x-KrQrfaxY.png 1x, /snickersy-project/assets/t-3-desk-2x-DHo1l0Ab.png 2x"
+            srcset="/YogaBloom/assets/t-3-desk-1x-KrQrfaxY.png 1x, /YogaBloom/assets/t-3-desk-2x-DHo1l0Ab.png 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/snickersy-project/assets/t-3-tab-1x-DkM6VxrF.png 1x, /snickersy-project/assets/t-3-tab-2x-3jxoxuKf.png 2x"
+            srcset="/YogaBloom/assets/t-3-tab-1x-DkM6VxrF.png 1x, /YogaBloom/assets/t-3-tab-2x-3jxoxuKf.png 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/snickersy-project/assets/t-3-mob-1x-B8K7BYeL.png 1x, /snickersy-project/assets/t-3-mob-2x-BUSX2lHG.png 2x"
+            srcset="/YogaBloom/assets/t-3-mob-1x-B8K7BYeL.png 1x, /YogaBloom/assets/t-3-mob-2x-BUSX2lHG.png 2x"
           />
           <img
-            src="/snickersy-project/assets/t-3-mob-1x-B8K7BYeL.png"
+            src="/YogaBloom/assets/t-3-mob-1x-B8K7BYeL.png"
             alt="Sophia Lee"
             width="343"
             height="221"
@@ -399,10 +414,11 @@
             <a
               class="link-for-icon"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.instagram.com/goitclub/"
             >
               <svg class="team-social-icon icon-gen" width="24" height="24">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
               </svg>
             </a>
           </div>
@@ -412,18 +428,18 @@
         <picture class="picture-team">
           <source
             media="(min-width: 1336px)"
-            srcset="/snickersy-project/assets/t-4-desk-1x-BUA41HXV.png 1x, /snickersy-project/assets/t-4-desk-2x-BgWE8Bdo.png 2x"
+            srcset="/YogaBloom/assets/t-4-desk-1x-BUA41HXV.png 1x, /YogaBloom/assets/t-4-desk-2x-BgWE8Bdo.png 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/snickersy-project/assets/t-4-tab-1x-H3vpmcPJ.png 1x, /snickersy-project/assets/t-4-tab-2x-QF4-_rqM.png 2x"
+            srcset="/YogaBloom/assets/t-4-tab-1x-H3vpmcPJ.png 1x, /YogaBloom/assets/t-4-tab-2x-QF4-_rqM.png 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/snickersy-project/assets/t-4-mob-1x-Bs-thZLg.png 1x, /snickersy-project/assets/t-4-mob-2x-DkcsRGur.png 2x"
+            srcset="/YogaBloom/assets/t-4-mob-1x-Bs-thZLg.png 1x, /YogaBloom/assets/t-4-mob-2x-DkcsRGur.png 2x"
           />
           <img
-            src="/snickersy-project/assets/t-4-mob-1x-Bs-thZLg.png"
+            src="/YogaBloom/assets/t-4-mob-1x-Bs-thZLg.png"
             alt="Noah Brown"
             width="343"
             height="221"
@@ -440,10 +456,11 @@
             <a
               class="link-for-icon"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.linkedin.com/school/goit-start-your-career-in-it/"
             >
               <svg class="team-social-icon icon-gen" width="24" height="24">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
               </svg>
             </a>
           </div>
@@ -453,18 +470,18 @@
         <picture class="picture-team">
           <source
             media="(min-width: 1336px)"
-            srcset="/snickersy-project/assets/t-5-desk-1x-BwHHaglA.png 1x, /snickersy-project/assets/t-5-desk-2x-D3g1kFhS.png 2x"
+            srcset="/YogaBloom/assets/t-5-desk-1x-BwHHaglA.png 1x, /YogaBloom/assets/t-5-desk-2x-D3g1kFhS.png 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/snickersy-project/assets/t-5-tab-1x-BHlqRLa8.png 1x, /snickersy-project/assets/t-5-tab-2x-COYKmldm.png 2x"
+            srcset="/YogaBloom/assets/t-5-tab-1x-BHlqRLa8.png 1x, /YogaBloom/assets/t-5-tab-2x-COYKmldm.png 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/snickersy-project/assets/t-5-mob-1x-_XIj4_av.png 1x, /snickersy-project/assets/t-5-mob-2x-DFi9qXgR.png 2x"
+            srcset="/YogaBloom/assets/t-5-mob-1x-_XIj4_av.png 1x, /YogaBloom/assets/t-5-mob-2x-DFi9qXgR.png 2x"
           />
           <img
-            src="/snickersy-project/assets/t-5-mob-1x-_XIj4_av.png"
+            src="/YogaBloom/assets/t-5-mob-1x-_XIj4_av.png"
             alt="Ava Green"
             width="343"
             height="221"
@@ -483,10 +500,11 @@
                 <a
                   class="link-for-icon"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.linkedin.com/school/goit-start-your-career-in-it/"
                 >
                   <svg class="team-social-icon icon-gen" width="24" height="24">
-                    <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
+                    <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
@@ -494,10 +512,11 @@
                 <a
                   class="link-for-icon"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.instagram.com/goitclub/"
                 >
                   <svg class="team-social-icon icon-gen" width="24" height="24">
-                    <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
+                    <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -505,10 +524,11 @@
                 <a
                   class="link-for-icon"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.facebook.com/goITclub/"
                 >
                   <svg class="team-social-icon icon-gen" width="24" height="24">
-                    <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-facebook"></use>
+                    <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -520,18 +540,18 @@
         <picture class="picture-team">
           <source
             media="(min-width: 1336px)"
-            srcset="/snickersy-project/assets/t-6-desk-1x-iBXrv564.png 1x, /snickersy-project/assets/t-6-desk-2x-V7EnJHPh.png 2x"
+            srcset="/YogaBloom/assets/t-6-desk-1x-iBXrv564.png 1x, /YogaBloom/assets/t-6-desk-2x-V7EnJHPh.png 2x"
           />
           <source
             media="(min-width: 768px)"
-            srcset="/snickersy-project/assets/t-6-tab-1x-Df0ioXZ4.png 1x, /snickersy-project/assets/t-6-tab-2x-DBJCYoD_.png 2x"
+            srcset="/YogaBloom/assets/t-6-tab-1x-Df0ioXZ4.png 1x, /YogaBloom/assets/t-6-tab-2x-DBJCYoD_.png 2x"
           />
           <source
             media="(max-width: 767px)"
-            srcset="/snickersy-project/assets/t-6-mob-1x-Dw5MZcPr.png 1x, /snickersy-project/assets/t-6-mob-2x-rP7RqG3T.png 2x"
+            srcset="/YogaBloom/assets/t-6-mob-1x-Dw5MZcPr.png 1x, /YogaBloom/assets/t-6-mob-2x-rP7RqG3T.png 2x"
           />
           <img
-            src="/snickersy-project/assets/t-6-mob-1x-Dw5MZcPr.png"
+            src="/YogaBloom/assets/t-6-mob-1x-Dw5MZcPr.png"
             alt="Clark Thomas"
             width="343"
             height="221"
@@ -550,10 +570,11 @@
                 <a
                   class="link-for-icon"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.instagram.com/goitclub/"
                 >
                   <svg class="team-social-icon icon-gen" width="24" height="24">
-                    <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
+                    <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
@@ -561,10 +582,11 @@
                 <a
                   class="link-for-icon"
                   target="_blank"
+                  rel="noopener noreferrer"
                   href="https://www.facebook.com/goITclub/"
                 >
                   <svg class="team-social-icon icon-gen" width="24" height="24">
-                    <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-facebook"></use>
+                    <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
@@ -586,48 +608,48 @@
     <ul class="gallery_list">
       <li class="gallery_item">
         <img
-          srcset="/snickersy-project/assets/gallery-photo1-DhBw0jfQ.jpg 1x, /snickersy-project/assets/gallery-photo1@2x-CgFf9WTG.jpg 2x"
-          src="/snickersy-project/assets/gallery-photo1-DhBw0jfQ.jpg"
+          srcset="/YogaBloom/assets/gallery-photo1-DhBw0jfQ.jpg 1x, /YogaBloom/assets/gallery-photo1@2x-CgFf9WTG.jpg 2x"
+          src="/YogaBloom/assets/gallery-photo1-DhBw0jfQ.jpg"
           alt="yoga"
           class="gallery_images"
         />
       </li>
       <li class="gallery_item">
         <img
-          srcset="/snickersy-project/assets/gallery-photo2-DVBH7L7I.jpg 1x, /snickersy-project/assets/gallery-photo2@2x-ImGxEZx2.jpg 2x"
-          src="/snickersy-project/assets/gallery-photo2-DVBH7L7I.jpg"
+          srcset="/YogaBloom/assets/gallery-photo2-DVBH7L7I.jpg 1x, /YogaBloom/assets/gallery-photo2@2x-ImGxEZx2.jpg 2x"
+          src="/YogaBloom/assets/gallery-photo2-DVBH7L7I.jpg"
           alt="yoga"
           class="gallery_images"
         />
       </li>
       <li class="gallery_item">
         <img
-          srcset="/snickersy-project/assets/gallery-photo3-CSi8RvwI.jpg 1x, /snickersy-project/assets/gallery-photo3@2x-T3pf9raY.jpg 2x"
-          src="/snickersy-project/assets/gallery-photo3-CSi8RvwI.jpg"
+          srcset="/YogaBloom/assets/gallery-photo3-CSi8RvwI.jpg 1x, /YogaBloom/assets/gallery-photo3@2x-T3pf9raY.jpg 2x"
+          src="/YogaBloom/assets/gallery-photo3-CSi8RvwI.jpg"
           alt="yoga"
           class="gallery_images"
         />
       </li>
       <li class="gallery_item">
         <img
-          srcset="/snickersy-project/assets/gallery-photo4-DJ0I5BOW.jpg 1x, /snickersy-project/assets/gallery-photo4@2x-BqjdFlks.jpg 2x"
-          src="/snickersy-project/assets/gallery-photo4-DJ0I5BOW.jpg"
+          srcset="/YogaBloom/assets/gallery-photo4-DJ0I5BOW.jpg 1x, /YogaBloom/assets/gallery-photo4@2x-BqjdFlks.jpg 2x"
+          src="/YogaBloom/assets/gallery-photo4-DJ0I5BOW.jpg"
           alt="yoga"
           class="gallery_images"
         />
       </li>
       <li class="gallery_item">
         <img
-          srcset="/snickersy-project/assets/gallery-photo5-DHorWAbI.jpg 1x, /snickersy-project/assets/gallery-photo5@2x-D3o6ONVI.jpg 2x"
-          src="/snickersy-project/assets/gallery-photo5-DHorWAbI.jpg"
+          srcset="/YogaBloom/assets/gallery-photo5-DHorWAbI.jpg 1x, /YogaBloom/assets/gallery-photo5@2x-D3o6ONVI.jpg 2x"
+          src="/YogaBloom/assets/gallery-photo5-DHorWAbI.jpg"
           alt="yoga"
           class="gallery_images"
         />
       </li>
       <li class="gallery_item">
         <img
-          srcset="/snickersy-project/assets/gallery-photo6-Bp7Jr8zU.jpg 1x, /snickersy-project/assets/gallery-photo6@2x-BuOUhgBB.jpg 2x"
-          src="/snickersy-project/assets/gallery-photo6-Bp7Jr8zU.jpg"
+          srcset="/YogaBloom/assets/gallery-photo6-Bp7Jr8zU.jpg 1x, /YogaBloom/assets/gallery-photo6@2x-BuOUhgBB.jpg 2x"
+          src="/YogaBloom/assets/gallery-photo6-Bp7Jr8zU.jpg"
           alt="yoga"
           class="gallery_images"
         />
@@ -696,8 +718,8 @@
             recommended for anyone seeking balance and inner peace.
           </p>
           <img
-            src="./Testimonial/Testimonial-1.png"
-            srcset="/snickersy-project/assets/Testimonial-1-CqEJ2WRt.png 1x, /snickersy-project/assets/Testimonial-1@2x-6ptYCXsK.png 2x, /snickersy-project/assets/Testimonial-1@3x-DFmXwyrK.png 3x"
+            src="/YogaBloom/assets/Testimonial-1-CqEJ2WRt.png"
+            srcset="/YogaBloom/assets/Testimonial-1-CqEJ2WRt.png 1x, /YogaBloom/assets/Testimonial-1@2x-6ptYCXsK.png 2x, /YogaBloom/assets/Testimonial-1@3x-DFmXwyrK.png 3x"
             alt="Donna Norman"
             class="testimonials_cards_inner_img"
           />
@@ -714,8 +736,8 @@
             journey inward. It’s now my favorite part of the week.
           </p>
           <img
-            src="/snickersy-project/assets/Testimonial-2-DaMODsGV.png"
-            srcset="/snickersy-project/assets/Testimonial-2-DaMODsGV.png 1x, /snickersy-project/assets/Testimonial-2@2x-mZ7TRNAq.png 2x, /snickersy-project/assets/Testimonial-2@3x-CJMgfyLg.png 3x"
+            src="/YogaBloom/assets/Testimonial-2-DaMODsGV.png"
+            srcset="/YogaBloom/assets/Testimonial-2-DaMODsGV.png 1x, /YogaBloom/assets/Testimonial-2@2x-mZ7TRNAq.png 2x, /YogaBloom/assets/Testimonial-2@3x-CJMgfyLg.png 3x"
             alt="Sophie Delgado"
             class="testimonials_cards_inner_img"
           />
@@ -732,8 +754,8 @@
             supportive. A perfect place to grow both physically and mentally.
           </p>
           <img
-            src="/snickersy-project/assets/Testimonial-3-NylBRSA1.png"
-            srcset="/snickersy-project/assets/Testimonial-3-NylBRSA1.png 1x, /snickersy-project/assets/Testimonial-3@2x-Bj6yWRZQ.png 2x, /snickersy-project/assets/Testimonial-3@3x-B-MTVf8Q.png 3x"
+            src="/YogaBloom/assets/Testimonial-3-NylBRSA1.png"
+            srcset="/YogaBloom/assets/Testimonial-3-NylBRSA1.png 1x, /YogaBloom/assets/Testimonial-3@2x-Bj6yWRZQ.png 2x, /YogaBloom/assets/Testimonial-3@3x-B-MTVf8Q.png 3x"
             alt="Rachel Kimura"
             class="testimonials_cards_inner_img"
           />
@@ -750,8 +772,8 @@
             make each class a peaceful escape from daily stress.
           </p>
           <img
-            src="/snickersy-project/assets/Testimonial-4-B9hPzQFB.png"
-            srcset="/snickersy-project/assets/Testimonial-4-B9hPzQFB.png 1x, /snickersy-project/assets/Testimonial-4@2x-1kmclNmU.png 2x, /snickersy-project/assets/Testimonial-4@3x-Ca2p-LxC.png 3x"
+            src="/YogaBloom/assets/Testimonial-4-B9hPzQFB.png"
+            srcset="/YogaBloom/assets/Testimonial-4-B9hPzQFB.png 1x, /YogaBloom/assets/Testimonial-4@2x-1kmclNmU.png 2x, /YogaBloom/assets/Testimonial-4@3x-Ca2p-LxC.png 3x"
             alt="Emma L. Hart"
             class="testimonials_cards_inner_img"
           />
@@ -782,22 +804,22 @@
           </div>
           <ul class="pricing-plan-package-list">
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">1 group session</p>
             </li>
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">
                 10% discount for next 2 Sessions
               </p>
             </li>
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">
                 Community support group
@@ -807,12 +829,15 @@
         </div>
         <button
           type="button"
-          class="prising-plan-first button-general"
+          class="pricing-plan-btn button-general"
           data-modal-open
+          data-plan="One Session"
+          data-price="$10"
         >
           Join
         </button>
       </li>
+
       <li class="pricing-plan-list-item">
         <div class="pricing-plan-list-context">
           <div class="pricing-plan-list-head">
@@ -821,20 +846,20 @@
           </div>
           <ul class="pricing-plan-package-list">
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">6 Group Sessions</p>
             </li>
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">2 Individual Sessions</p>
             </li>
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">
                 Priority customer support
@@ -844,58 +869,70 @@
         </div>
         <button
           type="button"
-          class="prising-plan-first button-general"
-          data-modal-open65
+          class="pricing-plan-btn button-general"
+          data-modal-open
+          data-plan="8 Sessions Package"
+          data-price="$65"
         >
           Join
         </button>
       </li>
-      <li class="pricing-plan-list-item">
+
+      <li class="pricing-plan-list-item pricing-plan-list-item--featured">
         <div class="pricing-plan-list-context">
           <div class="pricing-plan-list-head">
             <h3 class="pricing-plan-list-header">12 Sessions Package</h3>
             <p class="pricing-plan-cost">$80</p>
+            <button
+              type="button"
+              class="pricing-plan-btn pricing-plan-btn--inline button-general"
+              data-modal-open
+              data-plan="12 Sessions Package"
+              data-price="$80"
+            >
+              Join
+            </button>
           </div>
           <ul class="pricing-plan-package-list">
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">8 Group Sessions</p>
             </li>
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">4 Individual Sessions</p>
             </li>
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">
                 Access to advanced classes
               </p>
             </li>
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">
                 Monthly yoga challenges
               </p>
             </li>
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">
                 Exclusive member discounts
               </p>
             </li>
             <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
+              <svg width="24" height="25" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
               </svg>
               <p class="pricing-plan-information-text">
                 Community support group
@@ -905,326 +942,118 @@
         </div>
         <button
           type="button"
-          class="prising-plan-first button-general"
-          data-modal-open80
+          class="pricing-plan-btn pricing-plan-btn--default button-general"
+          data-modal-open
+          data-plan="12 Sessions Package"
+          data-price="$80"
         >
           Join
         </button>
-      </li>
-
-      <li class="pricing-plan-list-item">
-        <div class="pricing-plan-list-context">
-          <div class="pricing-plan-list-head">
-            <h3 class="pricing-plan-list-header">12 Sessions Package</h3>
-            <p class="pricing-plan-cost">$80</p>
-            <button
-              type="button"
-              class="prising-plan-first"
-              data-modal-open80tab
-            >
-              Join
-            </button>
-          </div>
-          <ul class="pricing-plan-package-list">
-            <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
-              </svg>
-              <p class="pricing-plan-information-text">8 Group Sessions</p>
-            </li>
-            <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
-              </svg>
-              <p class="pricing-plan-information-text">4 Individual Sessions</p>
-            </li>
-            <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
-              </svg>
-              <p class="pricing-plan-information-text">
-                Access to advanced classes
-              </p>
-            </li>
-            <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
-              </svg>
-              <p class="pricing-plan-information-text">
-                Monthly yoga challenges
-              </p>
-            </li>
-            <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
-              </svg>
-              <p class="pricing-plan-information-text">
-                Exclusive member discounts
-              </p>
-            </li>
-            <li class="pricing-plan-information-line">
-              <svg class="" width="24" height="25">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-check"></use>
-              </svg>
-              <p class="pricing-plan-information-text">
-                Community support group
-              </p>
-            </li>
-          </ul>
-        </div>
       </li>
     </ul>
   </div>
 </section>
 
-<div class="modal-overlay modal-overlay-10" data-modal>
-  <div class="modal">
-    <button type="button" class="modal-close-btn" data-modal-close>
-      <svg width="32" height="32" class="modal-close-icon">
-        <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-pop-up-close"></use>
+<div
+  class="modal-overlay"
+  data-modal
+  hidden
+  aria-hidden="true"
+>
+  <div
+    class="modal"
+    role="dialog"
+    aria-modal="true"
+    aria-labelledby="modal-title"
+  >
+    <button
+      type="button"
+      class="modal-close-btn"
+      data-modal-close
+      aria-label="Close modal"
+    >
+      <svg width="32" height="32" class="modal-close-icon" aria-hidden="true">
+        <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-pop-up-close"></use>
       </svg>
     </button>
-    <h2 class="modal-text">Join Now!</h2>
-    <h3 class="modal-text-h">One Session</h3>
-    <p class="modal-p">$10</p>
-    <form class="modal-form">
+    <h2 class="modal-text" id="modal-title">Join Now!</h2>
+    <h3 class="modal-text-h" data-modal-plan></h3>
+    <p class="modal-p" data-modal-price></p>
+    <form class="modal-form" data-modal-form novalidate>
       <div class="modal-box-div">
-        <label class="modal-label">Your Name</label>
+        <label class="modal-label" for="user-name">Your Name</label>
         <input
-          required=""
+          required
           class="modal-input-name"
           type="text"
           name="user-name"
-          id="user-name-10"
+          id="user-name"
           placeholder="Dexter"
+          autocomplete="name"
         />
       </div>
 
       <div class="desktop-wrapper">
         <div class="email-wrapper">
-          <label class="modal-label" for="user-email-10">Email</label>
+          <label class="modal-label" for="user-email">Email</label>
           <div class="modal-box-div">
             <input
+              required
               class="modal-input"
-              type="text"
+              type="email"
               name="user-email"
-              id="user-email-10"
+              id="user-email"
               placeholder="dexter.1997@gmail.com"
+              autocomplete="email"
             />
           </div>
         </div>
         <div class="email-wrapper">
-          <label class="modal-label" for="user-phone-10">Phone number</label>
+          <label class="modal-label" for="user-phone">Phone number</label>
           <div class="modal-box-div">
             <input
+              required
               class="modal-input"
-              type="text"
+              type="tel"
               name="user-phone"
-              id="user-phone-10"
+              id="user-phone"
               placeholder="+45 91 71 81 97"
+              autocomplete="tel"
             />
           </div>
         </div>
       </div>
       <div class="button-wrapper">
-        <button class="modal-btn button-general" type="button">
+        <button class="modal-btn button-general" type="submit">
           Go to checkout
         </button>
       </div>
     </form>
   </div>
 </div>
-
-<div class="modal-overlay modal-overlay-65" data-modal65>
-  <div class="modal">
-    <button type="button" class="modal-close-btn" data-modal-close65>
-      <svg width="32" height="32" class="modal-close-icon">
-        <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-pop-up-close"></use>
-      </svg>
-    </button>
-    <h2 class="modal-text">Join Now!</h2>
-    <h3 class="modal-text-h">8 Sessions Package</h3>
-    <p class="modal-p">$65</p>
-    <form class="modal-form">
-      <label class="modal-label" for="user-name-65">Your Name</label>
-      <div class="modal-box-div">
-        <input
-          class="modal-input-name"
-          type="text"
-          name="user-name"
-          id="user-name-65"
-          placeholder="Dexter"
-        />
-      </div>
-
-      <div class="desktop-wrapper">
-        <div class="email-wrapper">
-          <label class="modal-label" for="user-email-65">Email</label>
-          <div class="modal-box-div">
-            <input
-              class="modal-input"
-              type="text"
-              name="user-email"
-              id="user-email-65"
-              placeholder="dexter.1997@gmail.com"
-            />
-          </div>
-        </div>
-        <div class="email-wrapper">
-          <label class="modal-label" for="user-phone-65">Phone number</label>
-          <div class="modal-box-div">
-            <input
-              class="modal-input"
-              type="text"
-              name="user-phone"
-              id="user-phone-65"
-              placeholder="+45 91 71 81 97"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="button-wrapper">
-        <button class="modal-btn button-general" type="button">
-          Go to checkout
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
-
-<div class="modal-overlay modal-overlay-80" data-modal80 data-modal80tab>
-  <div class="modal">
-    <button type="button" class="modal-close-btn" data-modal-close80>
-      <svg width="32" height="32" class="modal-close-icon">
-        <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-pop-up-close"></use>
-      </svg>
-    </button>
-    <h2 class="modal-text">Join Now!</h2>
-    <h3 class="modal-text-h">12 Sessions Package</h3>
-    <p class="modal-p">$80</p>
-    <form class="modal-form">
-      <label class="modal-label" for="user-name-80">Your Name</label>
-      <div class="modal-box-div">
-        <input
-          class="modal-input-name"
-          type="text"
-          name="user-name"
-          id="user-name-80"
-          placeholder="Dexter"
-        />
-      </div>
-
-      <div class="desktop-wrapper">
-        <div class="email-wrapper">
-          <label class="modal-label" for="user-email-80">Email</label>
-          <div class="modal-box-div">
-            <input
-              class="modal-input"
-              type="text"
-              name="user-email"
-              id="user-email-80"
-              placeholder="dexter.1997@gmail.com"
-            />
-          </div>
-        </div>
-        <div class="email-wrapper">
-          <label class="modal-label" for="user-phone-80">Phone number</label>
-          <div class="modal-box-div">
-            <input
-              class="modal-input"
-              type="text"
-              name="user-phone"
-              id="user-phone-80"
-              placeholder="+45 91 71 81 97"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="button-wrapper">
-        <button class="modal-btn button-general" type="button">
-          Go to checkout
-        </button>
-      </div>
-    </form>
-  </div>
-</div>
-
-<!-- <div class="modal-overlay modal-overlay-80des" data-modal80des>
-  <div class="modal">
-    <button type="button" class="modal-close-btn" data-modal-close80des>
-      <svg width="32" height="32" class="modal-close-icon">
-        <use href="../img/sprite.svg#icon-pop-up-close"></use>
-      </svg>
-    </button>
-    <h2 class="modal-text">Join Now!</h2>
-    <h3 class="modal-text-h">12 Sessions Package</h3>
-    <p class="modal-p">$80</p>
-    <form class="modal-form">
-      <label class="modal-label" for="user-name-80">Your Name</label>
-      <div class="modal-box-div">
-        <input
-          class="modal-input-name"
-          type="text"
-          name="user-name"
-          id="user-name-80"
-        />
-      </div>
-
-      <div class="desktop-wrapper">
-        <div class="email-wrapper">
-          <label class="modal-label" for="user-email-80">Email</label>
-          <div class="modal-box-div">
-            <input
-              class="modal-input"
-              type="text"
-              name="user-email"
-              id="user-email-80"
-            />
-          </div>
-        </div>
-        <div class="email-wrapper">
-          <label class="modal-label" for="user-phone-80">Phone number</label>
-          <div class="modal-box-div">
-            <input
-              class="modal-input"
-              type="text"
-              name="user-phone"
-              id="user-phone-80"
-            />
-          </div>
-        </div>
-      </div>
-      <div class="button-wrapper">
-        <button class="modal-btn button-general" type="button">
-          Go to checkout
-        </button>
-      </div>
-    </form>
-  </div>
-</div> -->
 
     </main>
 
     <footer class="footer" id="footer">
   <div class="container footer-container">
     <div class="footer-form-wrapper">
-      <a class="footer-logo" href="#header">
-        <svg class="footer-logo-icon" width="84" height="36">
-          <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-logo-yoga-bloom"></use>
+      <a class="footer-logo" href="#header" aria-label="Yoga Bloom — home">
+        <svg class="footer-logo-icon" width="84" height="36" aria-hidden="true">
+          <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-logo-yoga-bloom"></use>
         </svg>
       </a>
       <p class="footer-header">
         Subscribe to our newsletter for the latest updates on our yoga courses
         and events.
       </p>
-      <form class="footer-form" action="submit">
+      <form class="footer-form" action="#" method="post">
         <input
           class="footer-form-input"
           type="email"
           name="form-email"
           id="footer-email"
           placeholder="Your email here"
-          pattern="([A-Za-z0-9_.-]{1,})@([A-Za-z0-9_.-]{1,})\.([A-Za-z]{2,8})"
+          autocomplete="email"
           required
         />
         <button class="footer-button button-general" type="submit">Join</button>
@@ -1247,6 +1076,9 @@
             <a class="quick-links link-gen" href="#team">Team</a>
           </li>
           <li class="quick-links-list-item">
+            <a class="quick-links link-gen" href="#about-us">About</a>
+          </li>
+          <li class="quick-links-list-item">
             <a class="quick-links link-gen" href="#pricing-plan">Pricing</a>
           </li>
           <li class="quick-links-list-item">
@@ -1262,9 +1094,10 @@
               class="footer-socials-link link-for-icon"
               href="https://www.facebook.com/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <svg class="footer-socials-icon icon-sec" width="24" height="24">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-facebook"></use>
+              <svg class="footer-socials-icon icon-sec" width="24" height="24" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-facebook"></use>
               </svg>
               <p class="text-soc">Facebook</p>
             </a>
@@ -1274,9 +1107,10 @@
               class="footer-socials-link link-for-icon"
               href="https://www.instagram.com/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <svg class="footer-socials-icon icon-sec" width="24" height="24">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
+              <svg class="footer-socials-icon icon-sec" width="24" height="24" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
               </svg>
               <p class="text-soc">Instagram</p>
             </a>
@@ -1286,9 +1120,10 @@
               class="footer-socials-link link-for-icon"
               href="https://www.linkedin.com/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <svg class="footer-socials-icon icon-sec" width="24" height="24">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
+              <svg class="footer-socials-icon icon-sec" width="24" height="24" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
               </svg>
               <p class="text-soc">LinkedIn</p>
             </a>
@@ -1298,9 +1133,10 @@
               class="footer-socials-link link-for-icon"
               href="https://www.youtube.com/"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <svg class="footer-socials-icon icon-sec" width="24" height="24">
-                <use href="/snickersy-project/assets/sprite-Mnv6MY-W.svg#icon-youtube"></use>
+              <svg class="footer-socials-icon icon-sec" width="24" height="24" aria-hidden="true">
+                <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-youtube"></use>
               </svg>
               <p class="text-soc">YouTube</p>
             </a>
