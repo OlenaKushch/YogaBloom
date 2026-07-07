@@ -1,4 +1,4 @@
-/* Mobile first: гумова верстка від 320px */
+/* Mobile first: base layout from 320px */
 .container {
   width: 100%;
   max-width: 100%;
@@ -6,14 +6,14 @@
   padding: 0 16px;
 }
 
-/* Стає адаптивною з 375px */
+/* Adapts from 375px */
 @media only screen and (min-width: 375px) {
   .container {
     max-width: 375px;
   }
 }
 
-/* Tablet: з 768px */
+/* Tablet: from 768px */
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -21,7 +21,7 @@
   }
 }
 
-/* Desktop: з 1336px */
+/* Desktop: from 1336px */
 @media only screen and (min-width: 1336px) {
   .container {
     max-width: 1336px;

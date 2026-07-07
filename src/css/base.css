@@ -70,6 +70,12 @@
   --color-scheme-4-border: var(--opacity-neutral-darkest-15);
   --color-scheme-4-accent: var(--color-neutral-darkest);
   --color-scheme-4-foreground: var(--color-drover-lightest);
+  --color-overlay: rgba(46, 47, 66, 0.4);
+  --shadow-accent-focus:
+    3px 3px 10px var(--color-accent), -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px var(--color-accent),
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 html {
@@ -92,6 +98,11 @@ html {
 
 body {
   background-color: var(--color-drover-lightest);
+}
+
+section,
+footer {
+  scroll-margin-top: 72px;
 }
 
 body.menu-open,
