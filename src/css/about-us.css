@@ -1,150 +1,150 @@
 .section-about-us {
-    background: #dfebeb;
-    padding-top: 64px;
-    padding-bottom: 64px;
+  background: var(--color-scheme-1-background);
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .cont-title {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 .about-us-title {
-    font-family: "Cabin", sans-serif;
-    font-weight: 400;
-    font-size: 40px;
-    
-    line-height: 120%;
-    letter-spacing: 0.01em;
-    text-align: center;
-    color: #0d0b0a;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 40px;
 
-    margin-bottom: 20px;
+  line-height: 120%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--color-neutral-darkest);
+
+  margin-bottom: 20px;
 }
 
 .about-us-descr {
-    font-family: "Sarabun", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    
-    line-height: 160%;
-    text-align: center;
-    color: #0d0b0a;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
 
-    margin-bottom: 48px;
+  line-height: 160%;
+  text-align: center;
+  color: var(--color-neutral-darkest);
+
+  margin-bottom: 48px;
 }
 
 /* list */
 .about-us-list {
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    gap: 48px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 48px;
 }
 
 .about-us-item {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
 }
 
 .about-us-item-title {
-    font-family: "Cabin", sans-serif;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 140%;
-    letter-spacing: 0.01em;
-    text-align: center;
-    color: #0d0b0a;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 140%;
+  letter-spacing: 0.01em;
+  text-align: center;
+  color: var(--color-neutral-darkest);
 }
 
 .about-us-item-text {
-    font-family: "Sarabun", sans-serif;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 160%;
-    text-align: center;
-    color: #0d0b0a;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+  text-align: center;
+  color: var(--color-neutral-darkest);
 }
 
 /* Button styles About Us Section */
 .btn-about-us {
-    border: 1px solid #c2d9fc;
-    border-radius: 100px;
-    padding: 10px 24px;
-    width: 343px;
-    height: 46px;
+  border: 1px solid var(--color-hawkes-blue);
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 343px;
+  height: 46px;
 
-    background: #c2d9fc;
-    margin-top: 48px;
+  background: var(--color-hawkes-blue);
+  margin-top: 48px;
 
-    font-family: "Sarabun", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
 
-    line-height: 160%;
-    color: #0d0b0a;
+  line-height: 160%;
+  color: var(--color-neutral-darkest);
 
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 @media (max-width: 374px) {
-    .about-us-title {
-        font-size: 28px;
-    }
+  .about-us-title {
+    font-size: 28px;
+  }
 
-    .about-us-descr {
-        font-size: 14px;
-    }
+  .about-us-descr {
+    font-size: 14px;
+  }
 
-    .about-us-list {
-        gap: 32px;
-    }
+  .about-us-list {
+    gap: 32px;
+  }
 
-    .btn-about-us {
-        width: 100%;
-    }
+  .btn-about-us {
+    width: 100%;
+  }
 }
 
 /* Tablet version */
 @media only screen and (min-width: 768px) {
-    .section-about-us {
+  .section-about-us {
     padding: 40px 16px;
-    background: #f2fafa;
-    }
+    background: var(--color-drover-lightest);
+  }
 
-    .about-us-title {
-        margin-top: 40px;
-        margin-bottom: 24px;
-    }
+  .about-us-title {
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
 
-    .about-us-descr {
+  .about-us-descr {
     font-size: 18px;
     line-height: 160%;
     margin-bottom: 40px;
-    }
+  }
 
-    .about-us-list {
+  .about-us-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
-    }
+  }
 
-    .about-us-item {
+  .about-us-item {
     width: calc((100% - 24px) / 2);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 0;
-    }
+  }
 
-    .btn-about-us {
-    border: 1px solid #c2d9fc;
+  .btn-about-us {
+    border: 1px solid var(--color-hawkes-blue);
     border-radius: 100px;
     padding: 10px 24px;
     width: 110px;
@@ -154,45 +154,44 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    }
+  }
 
-    .btn-about-us::after {
-    content: " now";
+  .btn-about-us::after {
+    content: ' now';
     white-space: nowrap;
-    }
-
+  }
 }
 /* Dekstop version */
 @media only screen and (min-width: 1336px) {
-    .section-about-us {
+  .section-about-us {
     padding: 112px 64px;
-    background: #f2fafa;
-    }
+    background: var(--color-drover-lightest);
+  }
 
-    .about-us-title {
-    font-family: "Cabin", sans-serif;
+  .about-us-title {
+    font-family: var(--second-family);
     font-weight: 400;
     font-size: 52px;
-        
+
     line-height: 120%;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #0d0b0a;
+    color: var(--color-neutral-darkest);
 
     margin-top: 0;
-    }
+  }
 
-    .about-us-descr {
-    font-family: "Sarabun", sans-serif;
+  .about-us-descr {
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
     line-height: 160%;
     text-align: center;
-    color: #0d0b0a;
+    color: var(--color-neutral-darkest);
     margin-bottom: 40px;
-    }
+  }
 
-    .about-us-list {
+  .about-us-list {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -200,38 +199,38 @@
 
     max-width: 1208px;
     margin: 0 auto;
-    }
+  }
 
-    .about-us-item {
+  .about-us-item {
     width: calc((100% - 72px) / 4);
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    }
+  }
 
-    .about-us-item-title {
-    font-family: "Cabin", sans-serif;
+  .about-us-item-title {
+    font-family: var(--second-family);
     font-weight: 400;
     font-size: 28px;
     line-height: 140%;
     letter-spacing: 0.01em;
     text-align: center;
-    color: #0d0b0a;
+    color: var(--color-neutral-darkest);
     margin-bottom: 24px;
-    }
-    
-    .about-us-item-text {
-    font-family: "Sarabun", sans-serif;
+  }
+
+  .about-us-item-text {
+    font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
     line-height: 160%;
     text-align: center;
-    color: #0d0b0a;
-    }
-    
-    .btn-about-us {
-    border: 1px solid #c2d9fc;
+    color: var(--color-neutral-darkest);
+  }
+
+  .btn-about-us {
+    border: 1px solid var(--color-hawkes-blue);
     border-radius: 100px;
     padding: 10px 24px;
     width: 110px;
@@ -241,10 +240,10 @@
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    }
+  }
 
-    .btn-about-us::after {
-    content: " now";
+  .btn-about-us::after {
+    content: ' now';
     white-space: nowrap;
-    }
+  }
 }
