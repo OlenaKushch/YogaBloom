@@ -21,7 +21,7 @@
       rel="stylesheet"
     />
     <script type="module" crossorigin src="/YogaBloom/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/YogaBloom/assets/index-x7o94w31.css">
+    <link rel="stylesheet" crossorigin href="/YogaBloom/assets/index-MHUW1m0B.css">
   </head>
 
   <body>
@@ -76,6 +76,9 @@
   class="mobile-menu"
   id="mobile-menu"
   data-menu
+  role="dialog"
+  aria-modal="true"
+  aria-label="Mobile menu"
   aria-hidden="true"
 >
   <div class="container">
@@ -1008,7 +1011,7 @@
     <h2 class="modal-text" id="modal-title">Join Now!</h2>
     <h3 class="modal-text-h" data-modal-plan></h3>
     <p class="modal-p" data-modal-price></p>
-    <form class="modal-form" data-modal-form novalidate>
+    <form class="modal-form" data-modal-form>
       <div class="modal-box-div">
         <label class="modal-label" for="user-name">Your Name</label>
         <input
@@ -1076,6 +1079,7 @@
         and events.
       </p>
       <form class="footer-form" action="#" method="post">
+        <label class="visually-hidden" for="footer-email">Email address</label>
         <input
           class="footer-form-input"
           type="email"
@@ -1134,7 +1138,7 @@
               >
                 <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-facebook"></use>
               </svg>
-              <p class="text-soc">Facebook</p>
+              <span class="text-soc">Facebook</span>
             </a>
           </li>
           <li class="connect-list-item">
@@ -1153,7 +1157,7 @@
               >
                 <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-instagram"></use>
               </svg>
-              <p class="text-soc">Instagram</p>
+              <span class="text-soc">Instagram</span>
             </a>
           </li>
           <li class="connect-list-item">
@@ -1172,7 +1176,7 @@
               >
                 <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-linkedin"></use>
               </svg>
-              <p class="text-soc">LinkedIn</p>
+              <span class="text-soc">LinkedIn</span>
             </a>
           </li>
           <li class="connect-list-item">
@@ -1191,7 +1195,7 @@
               >
                 <use href="/YogaBloom/assets/sprite-Mnv6MY-W.svg#icon-youtube"></use>
               </svg>
-              <p class="text-soc">YouTube</p>
+              <span class="text-soc">YouTube</span>
             </a>
           </li>
         </ul>
