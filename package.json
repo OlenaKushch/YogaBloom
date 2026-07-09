@@ -11,7 +11,8 @@
     "preview": "vite preview",
     "generate:placeholders": "node scripts/generate-placeholders.mjs",
     "format": "prettier --write \"src/**/*.{html,css,js}\"",
-    "lint:js": "eslint src/js",
+    "lint": "npm run lint:js && npm run lint:css",
+    "lint:js": "eslint src/js src/main.js",
     "lint:css": "stylelint \"src/css/**/*.css\""
   },
   "devDependencies": {
@@ -22,9 +23,7 @@
     "prettier": "^3.4.2",
     "stylelint": "^16.12.0",
     "stylelint-config-standard": "^36.0.1",
-    "vite": "^5.4.6"
-  },
-  "dependencies": {
+    "vite": "^5.4.6",
     "vite-plugin-full-reload": "^1.2.0",
     "vite-plugin-html-inject": "^1.1.2"
   },
