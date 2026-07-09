@@ -436,10 +436,6 @@
     transition: transform var(--transition-base);
   }
 
-  .close {
-    display: none;
-  }
-
   .modal-input-name {
     width: 520px;
     margin-bottom: 24px;

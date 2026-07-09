@@ -1,3 +1,5 @@
+import { getFocusableElements, trapFocus } from './a11y.js';
+
 (() => {
   const overlay = document.querySelector('[data-modal]');
   if (!overlay) return;
@@ -11,13 +13,6 @@
 
   let lastFocusedElement = null;
 
-  const getFocusableElements = () =>
-    Array.from(
-      dialog.querySelectorAll(
-        'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
-      )
-    ).filter(el => !el.hasAttribute('disabled'));
-
   const openModal = (plan, price) => {
     lastFocusedElement = document.activeElement;
 
@@ -29,7 +24,7 @@
     overlay.setAttribute('aria-hidden', 'false');
     document.body.classList.add('modal-open');
 
-    const focusable = getFocusableElements();
+    const focusable = getFocusableElements(dialog);
     (focusable[0] || closeBtn)?.focus();
   };
 
@@ -61,25 +56,16 @@
       return;
     }
 
-    if (event.key !== 'Tab') return;
-
-    const focusable = getFocusableElements();
-    if (!focusable.length) return;
-
-    const first = focusable[0];
-    const last = focusable[focusable.length - 1];
-
-    if (event.shiftKey && document.activeElement === first) {
-      event.preventDefault();
-      last.focus();
-    } else if (!event.shiftKey && document.activeElement === last) {
-      event.preventDefault();
-      first.focus();
-    }
+    trapFocus(event, dialog);
   });
 
   form?.addEventListener('submit', event => {
     event.preventDefault();
+    if (!form.checkValidity()) {
+      form.reportValidity();
+      return;
+    }
+    form.reset();
     closeModal();
   });
 })();
