@@ -23,7 +23,7 @@
   gap: 24px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: stretch;
   justify-content: center;
 }
 
@@ -40,7 +40,8 @@
 }
 
 .testimonials_cards {
-  padding: 12px;
+  box-sizing: border-box;
+  padding: 24px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -142,6 +143,7 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 24px;
+    align-items: stretch;
     padding: 0;
   }
 

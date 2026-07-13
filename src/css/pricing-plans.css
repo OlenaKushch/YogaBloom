@@ -123,8 +123,9 @@
 }
 
 .pricing-plan-btn:hover,
-.pricing-plan-btn:focus {
-  background-color: var(--color-accent);
+.pricing-plan-btn:focus-visible {
+  background-color: #7b68ee;
+  color: var(--color-hawkes-blue-lightest);
 }
 
 .pricing-plan-btn--inline {
@@ -365,8 +366,12 @@
 .modal-input-name:hover,
 .modal-input-name:focus {
   outline: none;
-  border: 2px solid var(--color-accent);
-  box-shadow: var(--shadow-accent-focus);
+  border: 2px solid #7b68ee;
+  box-shadow:
+    3px 3px 10px #7b68ee,
+    -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px #7b68ee,
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
 }
 
 .modal-input {
@@ -382,8 +387,12 @@
 .modal-input:hover,
 .modal-input:focus {
   outline: none;
-  border: 2px solid var(--color-accent);
-  box-shadow: var(--shadow-accent-focus);
+  border: 2px solid #7b68ee;
+  box-shadow:
+    3px 3px 10px #7b68ee,
+    -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px #7b68ee,
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
 }
 
 .modal-label {
@@ -416,9 +425,9 @@
 }
 
 .modal-btn:hover,
-.modal-btn:focus {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
+.modal-btn:focus-visible {
+  background-color: #7b68ee;
+  border-color: #7b68ee;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   color: var(--color-hawkes-blue-lightest);
 }

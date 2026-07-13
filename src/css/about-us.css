@@ -6,6 +6,15 @@
 
 .cont-title {
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-us-title,
+.about-us-descr,
+.about-us-list {
+  width: 100%;
 }
 
 .about-us-title {
@@ -67,28 +76,8 @@
   color: var(--color-neutral-darkest);
 }
 
-/* Button styles About Us Section */
-.btn-about-us {
-  border: 1px solid var(--color-hawkes-blue);
-  border-radius: 100px;
-  padding: 10px 24px;
-  width: 343px;
-  height: 46px;
-
-  background: var(--color-hawkes-blue);
+.section-about-us .btn--section {
   margin-top: 48px;
-
-  font-family: var(--font-family);
-  font-weight: 500;
-  font-size: 16px;
-
-  line-height: 160%;
-  color: var(--color-neutral-darkest);
-
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
 }
 
 @media (max-width: 374px) {
@@ -102,10 +91,6 @@
 
   .about-us-list {
     gap: 32px;
-  }
-
-  .btn-about-us {
-    width: 100%;
   }
 }
 
@@ -143,22 +128,8 @@
     gap: 0;
   }
 
-  .btn-about-us {
-    border: 1px solid var(--color-hawkes-blue);
-    border-radius: 100px;
-    padding: 10px 24px;
-    width: 110px;
-    height: 46px;
+  .section-about-us .btn--section {
     margin-top: 40px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .btn-about-us::after {
-    content: ' now';
-    white-space: nowrap;
   }
 }
 /* Dekstop version */
@@ -229,21 +200,7 @@
     color: var(--color-neutral-darkest);
   }
 
-  .btn-about-us {
-    border: 1px solid var(--color-hawkes-blue);
-    border-radius: 100px;
-    padding: 10px 24px;
-    width: 110px;
-    height: 46px;
+  .section-about-us .btn--section {
     margin-top: 40px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-
-  .btn-about-us::after {
-    content: ' now';
-    white-space: nowrap;
   }
 }

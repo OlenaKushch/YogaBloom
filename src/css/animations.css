@@ -10,8 +10,8 @@
 
 .button-general:hover,
 .button-general:focus-visible {
-  background-color: var(--color-accent);
-  border-color: var(--color-accent);
+  background-color: #7b68ee;
+  border-color: #7b68ee;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   color: var(--color-hawkes-blue-lightest);
 }
