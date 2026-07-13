@@ -6,6 +6,16 @@
 
 .classes-container {
   max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-p,
+.discover-title,
+.discover-inf,
+.discover-list {
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -203,54 +213,18 @@
   color: var(--color-neutral-darkest);
 }
 
-.join-btn {
-  border: 1px solid var(--color-hawkes-blue);
-  border-radius: 100px;
-  width: 343px;
-  height: 46px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--color-neutral-darkest);
-  background-color: var(--color-hawkes-blue);
-
-  text-align: center;
-  display: block;
-  padding: 10px 24px;
-  margin-left: auto;
-  margin-right: auto;
-
+.yoga-classes .btn--section {
   margin-top: 48px;
 }
 
-@media (max-width: 374px) {
-  .join-btn {
-    width: 100%;
-  }
-}
-
 @media screen and (min-width: 768px) {
-  .join-btn {
-    width: 110px;
-    height: 46px;
+  .yoga-classes .btn--section {
     margin-top: 61px;
-  }
-
-  .join-btn::after {
-    content: ' now';
-    white-space: nowrap;
   }
 }
 
 @media screen and (min-width: 1336px) {
-  .join-btn {
-    width: 110px;
-    height: 46px;
+  .yoga-classes .btn--section {
     margin-top: 40px;
-  }
-
-  .join-btn::after {
-    content: ' now';
-    white-space: nowrap;
   }
 }

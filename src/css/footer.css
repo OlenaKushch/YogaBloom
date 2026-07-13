@@ -93,8 +93,12 @@
 .footer-form-input:hover,
 .footer-form-input:focus {
   outline: none;
-  border: 2px solid var(--color-accent);
-  box-shadow: var(--shadow-accent-focus);
+  border: 2px solid #7b68ee;
+  box-shadow:
+    3px 3px 10px #7b68ee,
+    -1px -1px 6px rgba(255, 255, 255, 0.4),
+    inset 3px 3px 10px #7b68ee,
+    inset -1px -1px 6px rgba(255, 255, 255, 0.4);
 }
 
 .footer-form-input::placeholder {
@@ -102,20 +106,6 @@
   font-size: 16px;
   line-height: 1.6;
   color: var(--opacity-neutral-darkest-60);
-}
-
-.footer-button {
-  border: 1px solid var(--opacity-transparent);
-  border-radius: 100px;
-  padding: 10px 24px;
-  width: 100%;
-  max-height: 46px;
-  background: var(--opacity-neutral-darkest-5);
-
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.6;
-  color: var(--color-neutral-darkest);
 }
 
 .footer-policy-text {
@@ -134,14 +124,11 @@
   .footer-form {
     flex-direction: row;
     justify-content: flex-start;
+    align-items: stretch;
   }
 
   .footer-form-input {
     width: 546px;
-  }
-
-  .footer-button {
-    width: 78px;
   }
 
   .footer-form-wrapper {
